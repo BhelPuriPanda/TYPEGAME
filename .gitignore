@@ -1,0 +1,17 @@
+# Node modules (common)
+node_modules
+
+# Environment variables
+.env
+
+# macOS system files (harmless on Windows too)
+.DS_Store
+
+# Frontend build folder
+client/build
+
+# Backend build folder
+server/dist
+
+# Logs
+*.log
