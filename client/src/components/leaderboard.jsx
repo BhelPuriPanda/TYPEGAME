@@ -6,7 +6,7 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchScores = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/scores');
+        const res = await fetch('https://typegame-p1bu.onrender.com/api/scores');
         const data = await res.json();
         setScores(data);
       } catch (err) {

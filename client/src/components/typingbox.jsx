@@ -46,7 +46,7 @@ const TypingBox = () => {
   if (!name.trim()) return;
 
   try {
-    const res = await fetch('http://localhost:5000/api/scores', {
+    const res = await fetch('https://typegame-p1bu.onrender.com/api/scores', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, wpm }),
