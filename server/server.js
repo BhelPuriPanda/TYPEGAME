@@ -23,10 +23,6 @@ mongoose.connect(MONGO_URI)
 
 app.use('/api/scores', scoreRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Typing Game API is running');
-});
-
 app.listen(port, () => {
     console.log(`Server is listening at ${port}`);
 })

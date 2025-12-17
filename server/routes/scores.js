@@ -19,7 +19,8 @@ router.get('/', async (req, res) => {
     const scores = await score.find().sort({ wpm: -1 }).limit(10);
     res.json(scores);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching scores' });
+    console.error('❌ Error fetching scores:', error);
+    res.status(500).json([]); 
   }
 });
 
